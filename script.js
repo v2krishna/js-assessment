@@ -1,6 +1,7 @@
 //#1
 //Declare a variale called 'name' that has the value of your name.
 
+var name ='Krishna';
 /*code here*/
 
 //#2
@@ -8,17 +9,23 @@
 //If yes, log 'yes'
 //otherwise log 'no'
 //note: use console.log to log the string
-
-/*code here*/
+if(name ==='Ben') {
+  console.log('Yes');
+}
+else{
+  console.log('No');
+}
 
 //#3
 //create an array called 'favoriteFoods'.
 //fill it up with the names of several of your favorite foods
 
-/*code here*/
+var favroriteFoods;
+favoriteFoods = ['Mango' , 'Chicken', 'Curry'];
 
 //#4
 //use a for loop to log each food in the 'favoriteFoods' array
+
 
 /*code here*/
 
