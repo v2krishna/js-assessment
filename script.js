@@ -25,6 +25,10 @@ favoriteFoods = ['Mango' , 'Chicken', 'Curry'];
 
 //#4
 //use a for loop to log each food in the 'favoriteFoods' array
+for (i in favoriteFoods)
+{
+	console.log(favoriteFoods[i]);
+}
 
 
 /*code here*/
@@ -42,7 +46,14 @@ favoriteFoods = ['Mango' , 'Chicken', 'Curry'];
 //'sayHi' should accept one argument called 'name'
 //when 'sayHi' is invoked it should log the string 'Hello <name>!' where <name> is equal to the 'name' argument
 
+function sayHi(name)
+{
+	var greeting = 'Hello '+name +'!';
+	console.log(greeting); /*testing purpose*/
+	//return greeting;
+}
 /*code here*/
+sayHi('krishna'); //testing the function sayHi()
 
 //#7
 //create an array called 'friends'
@@ -51,6 +62,8 @@ favoriteFoods = ['Mango' , 'Chicken', 'Curry'];
 //put the three objects inside of the 'friends' array
 
 /*code here*/
+
+
 
 //#8
 //use a for loop to iterate over the 'friends' array from problem #7
@@ -72,3 +85,14 @@ favoriteFoods = ['Mango' , 'Chicken', 'Curry'];
 //try to solve this recursively
 
 /*code here*/
+
+function nFactorial(num)
+{
+	var i, res=1; //declaring variable
+	for(i = 1; i<=num; i++)
+	{
+		res = res * i;
+	}
+	console.log(res);
+}
+nFactorial(6);
