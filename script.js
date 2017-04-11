@@ -10,10 +10,10 @@ var name ='Krishna';
 //otherwise log 'no'
 //note: use console.log to log the string
 if(name ==='Ben') {
-  console.log('Yes');
+  console.log('yes');
 }
 else{
-  console.log('No');
+  console.log('no');
 }
 
 //#3
