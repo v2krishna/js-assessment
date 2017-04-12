@@ -62,14 +62,23 @@ sayHi('krishna'); //testing the function sayHi()
 //put the three objects inside of the 'friends' array
 
 /*code here*/
+var friends = 
+	[ 
+		{name:'krishna',	age:28,	vocation:'FullStack'},
+		{name:'Allen',		age:38,	vocation:'Front End Engineer'},
+		{name:'Robert',		age:30,	vocation:'DB Admin'}
+	];
 
-
-
+//console.log(friends);
 //#8
 //use a for loop to iterate over the 'friends' array from problem #7
 //inside the for loop print the string 'My friend <name> is <age> years old and does <vocation> for work.'
 
 /*code here*/
+for (i in friends)
+{
+	console.log('My friend '+friends[i].name +' is '+ friends[i].age + ' years old and does '+friends[i].vocation + ' for work.');
+}
 
 //#9
 //create a constructor called 'User' that can function as a class for creating new user objects
@@ -84,8 +93,6 @@ sayHi('krishna'); //testing the function sayHi()
 //note: the factorial of 5 is (5 * 4 * 3 * 2 * 1) ->  120
 //try to solve this recursively
 
-/*code here*/
-
 function nFactorial(num)
 {
 	var i, res=1; //declaring variable
@@ -95,4 +102,4 @@ function nFactorial(num)
 	}
 	console.log(res);
 }
-nFactorial(6);
+nFactorial(5);
